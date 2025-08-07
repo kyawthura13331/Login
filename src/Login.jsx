@@ -17,7 +17,7 @@ const Login = () => {
 
         try {
             const response = await axios.post(
-                'https://quickserve-t1f6.onrender.com/api/v1/user/login'
+                'http://150.95.82.207:8080/api/v1/user/login'
                ,
                 {
                     name:username,
