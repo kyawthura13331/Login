@@ -20,7 +20,7 @@ const Signup = () => { // Renamed component to Signup for clarity
                 //login user
                 // 'http://150.95.82.207:8080/api/v1/user/login'
                 //register user
-                'http://150.95.82.207:8080/api/v1/user/register'
+                'https://shomyn.asia/api/v1/user/register'
                 ,
                 {
                    name: username,
@@ -41,7 +41,7 @@ const Signup = () => { // Renamed component to Signup for clarity
             
             const msg = error.response?.data?.message || "Login failed";
             setErrorMsg(msg);
-            console.error("Login failed", msg);
+            console.error("Login failed", error);
         }
     }
 
